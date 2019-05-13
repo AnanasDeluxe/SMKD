@@ -1,0 +1,244 @@
+@import "../../../style/sass/_mixins.scss";
+@import './CreateGrenadeDialog.scss';
+
+.Sidebar {
+  .logo-container {
+    background-color: rgba(35, 40, 45, 1);
+    @include smkdBoxShadow(0 2px 4px rgba(0, 0, 0, 0.08));
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 15;
+    margin-bottom: 20px;
+
+    .logo-large {
+      width: 80px;
+      cursor: pointer;
+    }
+
+    .logo-small {
+      display: none;
+    }
+  }
+
+  .navigation-container {
+    .category {
+      background-color: rgba(35, 40, 45, 1);
+      padding: 13px 0 5px 0;
+
+      p {
+        letter-spacing: 1px;
+        height: 20px;
+        padding-left: 10px;
+        border-left: 2px solid #0073aa;
+        @include smkdText(13px, 600, left, #0073aa);
+      }
+    }
+
+    .map-pool {
+      .map {
+        display: flex;
+        padding: 10px 15px;
+        align-items: center;
+        background-color: rgba(35, 40, 45, 1);
+        position: relative;
+        flex-direction: column;
+
+        &:hover {
+          background-color: #39424A;
+        }
+
+        .name {
+          width: 100%;
+          align-items: center;
+          display: flex;
+          cursor: pointer;
+
+          .pin {
+            width: 30px;
+          }
+
+          span {
+            @include smkdText(14px, 400, left, white);
+            padding-left: 10px;
+          }
+
+          .rotate-icon {
+            @include smkdAbsolute(17px, 14px, auto, auto);
+            width: 15px;
+            transition: .2s all linear;
+          }
+        }
+      }
+
+      .active {
+        background-color: #39424A;
+      }
+    }
+  }
+}
+
+.shrinked {
+  .logo-container {
+    margin-bottom: 0;
+
+    .logo-large {
+      display: none;
+    }
+
+    .logo-small {
+      width: 26px;
+      display: block;
+    }
+  }
+
+  .navigation-container {
+    .category {
+      display: none;
+    }
+
+    .map-pool {
+      .map {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+
+        .name {
+          height: inherit;
+
+          .pin {
+            margin-left: 7px;
+            width: 35px;
+          }
+
+          span, .rotate-icon {
+            display: none;
+          }
+        }
+      }
+
+      .active {
+        background-color: #0073AA;
+      }
+    }
+  }
+}
+
+.App .light {
+  background-color: white;
+
+  .navigation-container {
+    .category {
+      background-color: white;
+    }
+
+    .map-pool {
+      .map {
+        background-color: white;
+
+        &:hover {
+          background-color: #e6e6e6;
+        }
+
+        .name {
+          span {
+            color: rgba(35, 40, 45, 1);
+          }
+
+          .rotate-icon {
+            filter: invert(100%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .App .Sidebar {
+    .logo-container {
+      margin-bottom: 0;
+
+      .logo-large {
+        display: none;
+      }
+
+      .logo-small {
+        width: 26px;
+        display: block;
+      }
+    }
+
+    .navigation-container {
+      .category {
+        display: none;
+      }
+
+      .map-pool {
+        .map {
+          width: 50px;
+          height: 50px;
+          padding: 0;
+
+          .name {
+            height: inherit;
+
+            .pin {
+              margin-left: 7.5px;
+              width: 35px;
+            }
+
+            span, .rotate-icon {
+              display: none;
+            }
+          }
+        }
+
+        .active {
+          background-color: #0073AA;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    .Sidebar {
+      @include smkdAbsolute(65px, auto, auto, 0);
+      width: 100%;
+      min-height: 0;
+      max-height: calc(100vh - 65px);
+      overflow: auto;
+      transition: .35s max-height ease-in-out;
+
+      .logo-container {
+        display: none;
+      }
+
+      .navigation-container {
+        padding: 0 20px;
+
+        .category {
+          display: flex;
+        }
+
+        .map-pool .map {
+          width: 100%;
+
+          .name {
+            span, .rotate-icon {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .hidden {
+      max-height: 0;
+    }
+  }
+}

@@ -1,0 +1,166 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .input-container h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #005076;
+    text-align: auto;
+    margin: 0;
+    margin-top: 15px;
+    width: 150px; }
+  .input-container .formControls {
+    width: 200px; }
+
+.Sidebar .logo-container {
+  background-color: #23282d;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 15;
+  margin-bottom: 20px; }
+  .Sidebar .logo-container .logo-large {
+    width: 80px;
+    cursor: pointer; }
+  .Sidebar .logo-container .logo-small {
+    display: none; }
+.Sidebar .navigation-container .category {
+  background-color: #23282d;
+  padding: 13px 0 5px 0; }
+  .Sidebar .navigation-container .category p {
+    letter-spacing: 1px;
+    height: 20px;
+    padding-left: 10px;
+    border-left: 2px solid #0073aa;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #0073aa;
+    text-align: left;
+    margin: 0; }
+.Sidebar .navigation-container .map-pool .map {
+  display: flex;
+  padding: 10px 15px;
+  align-items: center;
+  background-color: #23282d;
+  position: relative;
+  flex-direction: column; }
+  .Sidebar .navigation-container .map-pool .map:hover {
+    background-color: #39424A; }
+  .Sidebar .navigation-container .map-pool .map .name {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    cursor: pointer; }
+    .Sidebar .navigation-container .map-pool .map .name .pin {
+      width: 30px; }
+    .Sidebar .navigation-container .map-pool .map .name span {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: white;
+      text-align: left;
+      margin: 0;
+      padding-left: 10px; }
+    .Sidebar .navigation-container .map-pool .map .name .rotate-icon {
+      position: absolute;
+      top: 17px;
+      right: 14px;
+      bottom: auto;
+      left: auto;
+      width: 15px;
+      transition: .2s all linear; }
+.Sidebar .navigation-container .map-pool .active {
+  background-color: #39424A; }
+
+.shrinked .logo-container {
+  margin-bottom: 0; }
+  .shrinked .logo-container .logo-large {
+    display: none; }
+  .shrinked .logo-container .logo-small {
+    width: 26px;
+    display: block; }
+.shrinked .navigation-container .category {
+  display: none; }
+.shrinked .navigation-container .map-pool .map {
+  width: 50px;
+  height: 50px;
+  padding: 0; }
+  .shrinked .navigation-container .map-pool .map .name {
+    height: inherit; }
+    .shrinked .navigation-container .map-pool .map .name .pin {
+      margin-left: 7px;
+      width: 35px; }
+    .shrinked .navigation-container .map-pool .map .name span, .shrinked .navigation-container .map-pool .map .name .rotate-icon {
+      display: none; }
+.shrinked .navigation-container .map-pool .active {
+  background-color: #0073AA; }
+
+.App .light {
+  background-color: white; }
+  .App .light .navigation-container .category {
+    background-color: white; }
+  .App .light .navigation-container .map-pool .map {
+    background-color: white; }
+    .App .light .navigation-container .map-pool .map:hover {
+      background-color: #e6e6e6; }
+    .App .light .navigation-container .map-pool .map .name span {
+      color: #23282d; }
+    .App .light .navigation-container .map-pool .map .name .rotate-icon {
+      filter: invert(100%); }
+
+@media screen and (max-width: 1024px) {
+  .App .Sidebar .logo-container {
+    margin-bottom: 0; }
+    .App .Sidebar .logo-container .logo-large {
+      display: none; }
+    .App .Sidebar .logo-container .logo-small {
+      width: 26px;
+      display: block; }
+  .App .Sidebar .navigation-container .category {
+    display: none; }
+  .App .Sidebar .navigation-container .map-pool .map {
+    width: 50px;
+    height: 50px;
+    padding: 0; }
+    .App .Sidebar .navigation-container .map-pool .map .name {
+      height: inherit; }
+      .App .Sidebar .navigation-container .map-pool .map .name .pin {
+        margin-left: 7.5px;
+        width: 35px; }
+      .App .Sidebar .navigation-container .map-pool .map .name span, .App .Sidebar .navigation-container .map-pool .map .name .rotate-icon {
+        display: none; }
+  .App .Sidebar .navigation-container .map-pool .active {
+    background-color: #0073AA; } }
+@media screen and (max-width: 768px) {
+  .App .Sidebar {
+    position: absolute;
+    top: 65px;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    min-height: 0;
+    max-height: calc(100vh - 65px);
+    overflow: auto;
+    transition: .35s max-height ease-in-out; }
+    .App .Sidebar .logo-container {
+      display: none; }
+    .App .Sidebar .navigation-container {
+      padding: 0 20px; }
+      .App .Sidebar .navigation-container .category {
+        display: flex; }
+      .App .Sidebar .navigation-container .map-pool .map {
+        width: 100%; }
+        .App .Sidebar .navigation-container .map-pool .map .name span, .App .Sidebar .navigation-container .map-pool .map .name .rotate-icon {
+          display: block; }
+  .App .hidden {
+    max-height: 0; } }
+
+/*# sourceMappingURL=Sidebar.css.map */

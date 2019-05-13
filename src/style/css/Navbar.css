@@ -1,0 +1,67 @@
+.App .Navbar {
+  width: calc(100% - 235px);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  height: 65px;
+  background-color: white; }
+  .App .Navbar .sidebar-shrinker, .App .Navbar .fullscreen-container, .App .Navbar .sidebar-trigger, .App .Navbar .login-container {
+    width: 100px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .App .Navbar .sidebar-shrinker img, .App .Navbar .fullscreen-container img, .App .Navbar .sidebar-trigger img, .App .Navbar .login-container img {
+      width: 20px;
+      cursor: pointer; }
+  .App .Navbar .sidebar-trigger {
+    display: none; }
+  .App .Navbar .login-container {
+    width: 200px;
+    margin-left: auto; }
+    .App .Navbar .login-container p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #2E2E2E;
+      text-align: center;
+      margin: 0; }
+    .App .Navbar .login-container .user-container {
+      display: flex;
+      align-items: center;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer; }
+      .App .Navbar .login-container .user-container .profile-picture {
+        width: 25px;
+        border-radius: 20px;
+        margin-right: 10px; }
+      .App .Navbar .login-container .user-container p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.9em;
+        font-weight: 400;
+        color: #2E2E2E;
+        text-align: left;
+        margin: 0; }
+      .App .Navbar .login-container .user-container .dropdown-arrow {
+        width: 12px;
+        margin-left: 10px;
+        transition: 0.15s all ease-in; }
+      .App .Navbar .login-container .user-container .rotate {
+        transform: rotate(180deg); }
+
+@media screen and (max-width: 1024px) {
+  .App .Navbar {
+    width: calc(100% - 50px); }
+    .App .Navbar .sidebar-shrinker {
+      display: none; } }
+@media screen and (max-width: 768px) {
+  .App .Navbar {
+    width: 100%; }
+    .App .Navbar .sidebar-trigger {
+      display: flex; } }
+
+/*# sourceMappingURL=Navbar.css.map */

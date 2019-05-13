@@ -1,0 +1,358 @@
+.Content {
+  padding: 50px; }
+  .Content h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #4a6076;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 25px; }
+  .Content .content-container {
+    height: inherit;
+    width: 1024px; }
+    .Content .content-container .content-content {
+      display: flex; }
+      .Content .content-container .content-content .filters {
+        background-color: white;
+        border-top: 4px solid rgba(0, 115, 170, 0.5);
+        border-radius: 2px;
+        width: 15%;
+        padding: 25px 40px;
+        margin-right: 5%; }
+        .Content .content-container .content-content .filters h2 {
+          font-family: "Open Sans", sans-serif;
+          font-size: 1em;
+          font-weight: 400;
+          color: #2E2E2E;
+          text-align: left;
+          margin: 0; }
+        .Content .content-container .content-content .filters .filter-category {
+          display: flex;
+          flex-direction: column;
+          padding-left: 5px;
+          margin-top: 25px; }
+          .Content .content-container .content-content .filters .filter-category h3 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 0.9em;
+            font-weight: 400;
+            color: #2E2E2E;
+            text-align: left;
+            margin: 0; }
+            .Content .content-container .content-content .filters .filter-category h3 img {
+              width: 10px;
+              margin-right: 10px; }
+          .Content .content-container .content-content .filters .filter-category ul {
+            list-style: none;
+            padding-left: 10px;
+            margin-top: 5px; }
+            .Content .content-container .content-content .filters .filter-category ul li {
+              display: flex;
+              align-items: center; }
+              .Content .content-container .content-content .filters .filter-category ul li p {
+                font-family: "Open Sans", sans-serif;
+                font-size: 0.9;
+                font-weight: 400;
+                color: #2E2E2E;
+                text-align: left;
+                margin: 0; }
+      .Content .content-container .content-content .map-container {
+        width: 80%;
+        height: 80%;
+        position: relative; }
+        .Content .content-container .content-content .map-container .map {
+          width: 100%;
+          height: 100%; }
+        .Content .content-container .content-content .map-container .nade, .Content .content-container .content-content .map-container .nade-origin {
+          position: absolute;
+          height: 8px;
+          width: 8px;
+          border-radius: 100%;
+          background: white;
+          border: 1px solid black;
+          cursor: pointer; }
+        .Content .content-container .content-content .map-container .nade-origin {
+          background: red; }
+        .Content .content-container .content-content .map-container .back-arrow {
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+          background: white;
+          position: absolute;
+          top: 25px;
+          right: auto;
+          bottom: auto;
+          left: 25px;
+          cursor: pointer; }
+          .Content .content-container .content-content .map-container .back-arrow img {
+            margin: 13px 0 0 12px;
+            width: 25px; }
+
+.NadeDialog-container .title-container {
+  height: 120px;
+  display: flex;
+  padding: 10px 50px;
+  border-bottom: 1px solid #a4a4a4;
+  background: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+  .NadeDialog-container .title-container .side {
+    display: flex;
+    flex-direction: column; }
+    .NadeDialog-container .title-container .side .text {
+      height: 70px;
+      line-height: 70px;
+      display: flex; }
+      .NadeDialog-container .title-container .side .text span {
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.85em;
+        font-weight: 300;
+        color: #a4a4a4;
+        text-align: left;
+        margin: 0;
+        margin: 0 10px 0 0; }
+      .NadeDialog-container .title-container .side .text img {
+        width: 10px;
+        height: 10px;
+        margin-top: 30px; }
+      .NadeDialog-container .title-container .side .text h2 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.7em;
+        font-weight: 500;
+        color: #2e2e2e;
+        text-align: left;
+        margin: 0;
+        margin-left: 20px;
+        margin-top: -3px; }
+    .NadeDialog-container .title-container .side .tags {
+      display: flex; }
+    .NadeDialog-container .title-container .side .buttons-container {
+      display: flex;
+      margin-left: auto; }
+      .NadeDialog-container .title-container .side .buttons-container .like-button, .NadeDialog-container .title-container .side .buttons-container .favorite-button {
+        height: 30px;
+        cursor: pointer;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        margin-left: 10px;
+        padding: 3px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .NadeDialog-container .title-container .side .buttons-container .like-button img, .NadeDialog-container .title-container .side .buttons-container .favorite-button img {
+          width: 18px;
+          height: 18px; }
+        .NadeDialog-container .title-container .side .buttons-container .like-button span, .NadeDialog-container .title-container .side .buttons-container .favorite-button span {
+          font-family: "Open Sans", sans-serif;
+          font-size: 0.9em;
+          font-weight: 300;
+          color: #2e2e2e;
+          text-align: left;
+          margin: 0;
+          margin-left: 8px; }
+  .NadeDialog-container .title-container .right {
+    margin-left: auto;
+    padding: 40px 0; }
+.NadeDialog-container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 768px;
+  margin: 30px auto; }
+  .NadeDialog-container .content .video-container {
+    width: 768px;
+    height: 432px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative; }
+    .NadeDialog-container .content .video-container .crosshair-expension {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      .NadeDialog-container .content .video-container .crosshair-expension .vertical {
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: white;
+        top: 49.9%; }
+      .NadeDialog-container .content .video-container .crosshair-expension .horizontal {
+        background: white;
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: 50%; }
+    .NadeDialog-container .content .video-container iframe {
+      width: 768px;
+      height: 432px; }
+  .NadeDialog-container .content .video-buttons {
+    display: flex;
+    width: 100%; }
+    .NadeDialog-container .content .video-buttons .button {
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.85em;
+      font-weight: 300;
+      color: white;
+      text-align: left;
+      margin: 0;
+      display: flex;
+      height: 30px;
+      padding: 3px 10px;
+      border-radius: 8px;
+      margin: 7px 10px 0 0;
+      background: #0073AA;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+  .NadeDialog-container .content .comments-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    width: 100%; }
+    .NadeDialog-container .content .comments-container h3 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.2em;
+      font-weight: 300;
+      color: #2E2E2E;
+      text-align: left;
+      margin: 0;
+      margin-bottom: 10px; }
+    .NadeDialog-container .content .comments-container .comments {
+      display: flex;
+      flex-direction: column; }
+      .NadeDialog-container .content .comments-container .comments .add-comment {
+        display: flex; }
+      .NadeDialog-container .content .comments-container .comments .comment {
+        display: flex;
+        min-height: 90px;
+        border-bottom: 1px solid #e2e2e2;
+        position: relative; }
+        .NadeDialog-container .content .comments-container .comments .comment:hover .text-container .upvote-container {
+          opacity: 1; }
+        .NadeDialog-container .content .comments-container .comments .comment .img-container {
+          width: 45px;
+          height: 45px;
+          border-radius: 100%;
+          overflow: hidden;
+          margin-top: 22.5px;
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.3); }
+          .NadeDialog-container .content .comments-container .comments .comment .img-container img {
+            width: inherit;
+            height: inherit; }
+        .NadeDialog-container .content .comments-container .comments .comment .text-container {
+          width: 92%;
+          margin-left: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-top: 12px; }
+          .NadeDialog-container .content .comments-container .comments .comment .text-container .input-container {
+            min-height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -16px; }
+          .NadeDialog-container .content .comments-container .comments .comment .text-container .text span {
+            cursor: pointer;
+            font-family: "Open Sans", sans-serif;
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #2E2E2E;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 3px; }
+          .NadeDialog-container .content .comments-container .comments .comment .text-container .text .likes {
+            font-family: "Open Sans", sans-serif;
+            font-size: 0.7em;
+            font-weight: 300;
+            color: #999;
+            text-align: left;
+            margin: 0;
+            margin-left: 10px; }
+          .NadeDialog-container .content .comments-container .comments .comment .text-container p {
+            font-family: "Open Sans", sans-serif;
+            font-size: 0.75em;
+            font-weight: 400;
+            color: #2E2E2E;
+            text-align: left;
+            margin: 0; }
+          .NadeDialog-container .content .comments-container .comments .comment .text-container .upvote-container {
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: 8px; }
+            .NadeDialog-container .content .comments-container .comments .comment .text-container .upvote-container img {
+              width: 11px;
+              height: 11px;
+              margin-right: 5px;
+              cursor: pointer; }
+
+.popover-content {
+  width: 290px;
+  height: 205px;
+  padding: 10px; }
+  .popover-content img {
+    border-radius: 8px;
+    width: 290px; }
+  .popover-content .text {
+    height: 40px;
+    display: flex;
+    align-items: center; }
+    .popover-content .text h4 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.8em;
+      font-weight: 300;
+      color: #2E2E2E;
+      text-align: left;
+      margin: 0; }
+    .popover-content .text .send-button {
+      height: 30px;
+      display: flex;
+      width: 30px;
+      margin-left: auto; }
+      .popover-content .text .send-button img {
+        width: 15px;
+        height: 15px; }
+
+.tag {
+  padding: 3px 10px;
+  height: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px; }
+  .tag span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.825em;
+    font-weight: 300;
+    color: #2e2e2e;
+    text-align: center;
+    margin: 0; }
+
+.send-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  color: white;
+  text-align: left;
+  margin: 0;
+  display: flex;
+  height: 56px;
+  width: 70px;
+  border-radius: 8px;
+  margin: 7px 0 0 10px;
+  background: #0073AA;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+
+/*# sourceMappingURL=Content.css.map */

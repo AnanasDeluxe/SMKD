@@ -1,0 +1,70 @@
+@import "_mixins.scss";
+@import "Navbar.scss";
+@import "custom-buttons.scss";
+@import "loginDialog.scss";
+@import "editProfile.scss";
+@import "filtersDialog.scss";
+
+body {
+  margin: 0;
+}
+
+.App {
+  .Sidebar, .Navbar, .Content {
+    float: left;
+  }
+
+  .Content {
+    width: calc(100% - 335px);
+  }
+
+  .Sidebar {
+    min-height: 100vh;
+    height: 100vh;
+    width: 235px;
+    background-color: rgba(35, 40, 45, 1);
+  }
+
+  .shrinked {
+    width: 50px;
+  }
+
+  .Content {
+    height: calc(100vh - 165px);
+    display: flex;
+    background: #E9E9E9;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .expand-content {
+    width: calc(100% - 150px);
+  }
+
+  .NavbarShrinked {
+    width: calc(100% - 50px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .App {
+    .Sidebar {
+      width: 50px;
+    }
+
+    .Content {
+      width: calc(100% - 150px);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    .Content {
+      width: 100%;
+    }
+  }
+}

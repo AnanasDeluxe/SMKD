@@ -1,0 +1,77 @@
+.custom-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #23282d;
+  padding: 0.6rem 2rem 0.6rem 3rem; }
+  .custom-button .circle {
+    background-color: #23282d;
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 100%;
+    margin-right: 0.75rem;
+    position: absolute;
+    left: 1rem;
+    transition: 0.2s; }
+  .custom-button .text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+    text-align: auto;
+    margin: 0;
+    position: relative;
+    left: 0;
+    transition: 0.5s; }
+  .custom-button:hover .circle {
+    transform: scale(20); }
+  .custom-button:hover .text {
+    left: -0.5rem;
+    color: white; }
+
+.validate-button {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.42);
+  background: rgba(0, 0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: 0.3s;
+  cursor: pointer; }
+  .validate-button span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: #2E2E2E;
+    text-align: center;
+    margin: 0;
+    transition: 0.25s; }
+  .validate-button:hover {
+    background-color: #2E2E2E; }
+    .validate-button:hover span {
+      color: white; }
+
+.steam-login {
+  border-radius: 8px;
+  background-color: #2E2E2E;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .steam-login img {
+    width: 38px;
+    margin-right: 10px; }
+  .steam-login span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin: 0; }
+
+/*# sourceMappingURL=custom-buttons.css.map */

@@ -1,0 +1,90 @@
+@import "_mixins.scss";
+
+.App .Navbar {
+  width: calc(100% - 235px);
+  @include smkdBoxShadow(0 2px 4px rgba(0, 0, 0, 0.08));
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  height: 65px;
+  background-color: white;
+
+  .sidebar-shrinker, .fullscreen-container, .sidebar-trigger, .login-container {
+    width: 100px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .sidebar-trigger {
+    display: none;
+  }
+
+  .login-container {
+    width: 200px;
+    margin-left: auto;
+
+    p {
+      @include smkdText(1.2em, 600, center, #2E2E2E);
+    }
+
+    .user-container {
+      display: flex;
+      align-items: center;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.20);
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+
+      .profile-picture {
+        width: 25px;
+        border-radius: 20px;
+        margin-right: 10px;
+      }
+
+      p {
+        @include smkdText(0.9em, 400, left, #2E2E2E);
+      }
+
+      .dropdown-arrow {
+        width: 12px;
+        margin-left: 10px;
+        transition: 0.15s all ease-in;
+      }
+
+      .rotate {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .App {
+    .Navbar {
+      width: calc(100% - 50px);
+
+      .sidebar-shrinker {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    .Navbar {
+      width: 100%;
+
+      .sidebar-trigger {
+        display: flex;
+      }
+    }
+  }
+}

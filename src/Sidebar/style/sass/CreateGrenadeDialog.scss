@@ -1,0 +1,17 @@
+@import "../../../style/sass/mixins.scss";
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    @include smkdText(0.9em, 600, auto, rgb(0, 80, 118));
+    margin-top: 15px;
+    width: 150px;
+  }
+
+  .formControls {
+    width: 200px;
+  }
+}

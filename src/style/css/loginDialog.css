@@ -1,0 +1,75 @@
+.login-content {
+  padding: 50px 60px 20px 60px; }
+  .login-content .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px; }
+    .login-content .title-container h2 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.3em;
+      font-weight: 300;
+      color: #2E2E2E;
+      text-align: center;
+      margin: 0; }
+    .login-content .title-container img {
+      margin-top: 25px;
+      width: 140px; }
+  .login-content .login-form .validate-button, .login-content .signUp-form .validate-button {
+    margin-top: 30px; }
+  .login-content .login-form .err-container, .login-content .signUp-form .err-container {
+    display: flex;
+    margin-top: 23px; }
+    .login-content .login-form .err-container p, .login-content .signUp-form .err-container p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.825em;
+      font-weight: 300;
+      color: #f74c4c;
+      text-align: center;
+      margin: 0; }
+  .login-content .steam-login {
+    margin-top: 30px; }
+  .login-content .bottom-text {
+    margin-top: 50px; }
+    .login-content .bottom-text p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.7em;
+      font-weight: 600;
+      color: #2E2E2E;
+      text-align: center;
+      margin: 0; }
+      .login-content .bottom-text p span {
+        color: #0073AA;
+        cursor: pointer; }
+
+.user-dropdown {
+  display: flex; }
+  .user-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px; }
+    .user-dropdown ul li {
+      border-bottom: 1px solid #E2E2E2;
+      background: #FFFFFF;
+      transition: .1s all ease-out;
+      display: flex;
+      cursor: pointer;
+      padding: 0 15px;
+      height: 49px; }
+      .user-dropdown ul li p {
+        align-self: center;
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.8em;
+        font-weight: 400;
+        color: #2E2E2E;
+        text-align: left;
+        margin: 0;
+        margin-right: auto; }
+      .user-dropdown ul li .dropdown-arrow {
+        width: 24px;
+        margin-right: 15px; }
+      .user-dropdown ul li:hover {
+        background: #E2E2E2; }
+
+/*# sourceMappingURL=loginDialog.css.map */

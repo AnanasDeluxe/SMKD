@@ -1,0 +1,22 @@
+
+@mixin smkdBoxShadow($boxshadow) {
+  -webkit-box-shadow: $boxshadow;
+  box-shadow: $boxshadow;
+}
+
+@mixin smkdText($size, $weight, $align, $color) {
+  font-family: "Open Sans", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  text-align: $align;
+  margin: 0;
+}
+
+@mixin smkdAbsolute($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
